@@ -4,6 +4,8 @@
 
 The purpose of this code is to distribute a coarse exposure model to a finer resolution based on additional datasets (e.g. WorldPop).
 
+![Example application of code to commercial assets in Austria](demo_austria.png?raw=true "Example application of code to commercial assets in Austria")
+
 ## Dependencies
 
 At the moment, the code is heavy on external dependencies. These can potentially be reduced at a later stage. These external dependencies include:
