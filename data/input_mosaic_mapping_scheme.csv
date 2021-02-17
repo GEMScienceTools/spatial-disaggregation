@@ -1,0 +1,248 @@
+﻿short_name,iso_name,hazard_mosaic,risk_mosaic,country_name,error_status
+Algeria,DZA,NAF,Africa,Algeria,0
+Egypt,EGY,NAF,Africa,Egypt,0
+Libya,LBY,NAF,Africa,Libya,0
+Morocco,MAR,NAF,Africa,Morocco,0
+Sudan,SDN,SSA,Africa,Sudan,0
+Tunisia,TUN,NAF,Africa,Tunisia,0
+Western Sahara,ESH,,Africa,Western_Sahara,1
+Burundi,BDI,SSA,Africa,Burundi,0
+Comoros,COM,,Africa,Comoros,1
+Djibouti,DJI,SSA,Africa,Djibouti,0
+Eritrea,ERI,SSA,Africa,Eritrea,0
+Ethiopia,ETH,SSA,Africa,Ethiopia,0
+Kenya,KEN,SSA,Africa,Kenya,0
+Madagascar,MDG,SSA,Africa,Madagascar,0
+Malawi,MWI,SSA,Africa,Malawi,0
+Mauritius,MUS,,Africa,Mauritius,1
+Mayotte,MYT,,Africa,Mayotte,1
+Mozambique,MOZ,SSA,Africa,Mozambique,0
+Réunion,REU,,Africa,Réunion,1
+Rwanda,RWA,SSA,Africa,Rwanda,0
+Seychelles,SYC,,Africa,Seychelles,1
+Somalia,SOM,SSA,Africa,Somalia,0
+South Sudan,SSD,SSA,Africa,South_Sudan,0
+Uganda,UGA,SSA,Africa,Uganda,0
+Tanzania,TZA,SSA,Africa,Tanzania,0
+Zambia,ZMB,SSA,Africa,Zambia,0
+Zimbabwe,ZWE,SSA,Africa,Zimbabwe,0
+Angola,AGO,WAF,Africa,Angola,0
+Cameroon,CMR,WAF,Africa,Cameroon,0
+Central African Republic,CAF,WAF,Africa,Central_African_Republic,0
+Chad,TCD,,Africa,Chad,1
+Congo,COG,WAF,Africa,Congo,0
+Democratic Republic of the Congo,COD,DRC,Africa,Democratic_Republic_of_the_Congo,0
+Equatorial Guinea,GNQ,WAF,Africa,Equatorial_Guinea,0
+Gabon,GAB,WAF,Africa,Gabon,0
+São Tomé and Príncipe,STP,,Africa,São_Tomé_and_Príncipe,1
+Botswana,BWA,SSA,Africa,Botswana,0
+Lesotho,LSO,ZAF,Africa,Lesotho,0
+Namibia,NAM,WAF,Africa,Namibia,0
+South Africa,ZAF,ZAF,Africa,South_Africa,0
+Eswatini,SWZ,ZAF,Africa,Eswatini,0
+Benin,BEN,WAF,Africa,Benin,0
+Burkina Faso,BFA,,Africa,Burkina_Faso,1
+Cape Verde,CPV,,Africa,Cape_Verde,1
+Côte d'Ivoire,CIV,WAF,Africa,Côte_d'Ivoire,0
+Gambia,GMB,WAF,Africa,Gambia,0
+Ghana,GHA,WAF,Africa,Ghana,0
+Guinea,GIN,WAF,Africa,Guinea,0
+Guinea-Bissau,GNB,WAF,Africa,Guinea-Bissau,0
+Liberia,LBR,WAF,Africa,Liberia,0
+Mali,MLI,WAF,Africa,Mali,0
+Mauritania,MRT,MAU,Africa,Mauritania,0
+Niger,NER,,Africa,Niger,1
+Nigeria,NGA,WAF,Africa,Nigeria,0
+Saint Helena,SHN,,Africa,Saint_Helena,1
+Senegal,SEN,WAF,Africa,Senegal,0
+Sierra Leone,SLE,WAF,Africa,Sierra_Leone,0
+Togo,TGO,WAF,Africa,Togo,0
+Anguilla,AIA,CCA,Caribbean_Central_America,Anguilla,0
+Antigua and Barbuda,ATG,CCA,Caribbean_Central_America,Antigua_and_Barbuda,0
+Aruba,ABW,CCA,Caribbean_Central_America,Aruba,0
+Bahamas,BHS,CCA,Caribbean_Central_America,Bahamas,0
+Barbados,BRB,CCA,Caribbean_Central_America,Barbados,0
+"Bonaire, Sint Eustatius and Saba",BES,CCA,Caribbean_Central_America,"Bonaire,_Sint_Eustatius_and_Saba",0
+British Virgin Islands,VGB,CCA,Caribbean_Central_America,British_Virgin_Islands,0
+Cayman Islands,CYM,CCA,Caribbean_Central_America,Cayman_Islands,0
+Cuba,CUB,CCA,Caribbean_Central_America,Cuba,0
+Curaçao,CUW,CCA,Caribbean_Central_America,Curaçao,0
+Dominica,DMA,CCA,Caribbean_Central_America,Dominica,0
+Dominican Republic,DOM,CCA,Caribbean_Central_America,Dominican_Republic,0
+Grenada,GRD,CCA,Caribbean_Central_America,Grenada,0
+Guadeloupe,GLP,CCA,Caribbean_Central_America,Guadeloupe,0
+Haiti,HTI,CCA,Caribbean_Central_America,Haiti,0
+Jamaica,JAM,CCA,Caribbean_Central_America,Jamaica,0
+Martinique,MTQ,CCA,Caribbean_Central_America,Martinique,0
+Montserrat,MSR,CCA,Caribbean_Central_America,Montserrat,0
+Puerto Rico,PRI,CCA,Caribbean_Central_America,Puerto_Rico,0
+Saint Kitts and Nevis,KNA,CCA,Caribbean_Central_America,Saint_Kitts_and_Nevis,0
+Saint Lucia,LCA,CCA,Caribbean_Central_America,Saint_Lucia,0
+Saint Vincent and the Grenadines,VCT,CCA,Caribbean_Central_America,Saint_Vincent_and_the_Grenadines,0
+Saint-Barthélemy,BLM,CCA,Caribbean_Central_America,Saint-Barthélemy,0
+Saint-Martin (French part),MAF,CCA,Caribbean_Central_America,Saint-Martin_(French_part),0
+Sint Maarten (Dutch part),SXM,CCA,Caribbean_Central_America,Sint_Maarten_(Dutch_part),0
+Trinidad and Tobago,TTO,CCA,Caribbean_Central_America,Trinidad_and_Tobago,0
+Turks and Caicos Islands,TCA,CCA,Caribbean_Central_America,Turks_and_Caicos_Islands,0
+United States Virgin Islands,VIR,CCA,Caribbean_Central_America,United_States_Virgin_Islands,0
+Belize,BLZ,CCA,Caribbean_Central_America,Belize,0
+Costa Rica,CRI,CCA,Caribbean_Central_America,Costa_Rica,0
+El Salvador,SLV,CCA,Caribbean_Central_America,El_Salvador,0
+Guatemala,GTM,CCA,Caribbean_Central_America,Guatemala,0
+Honduras,HND,CCA,Caribbean_Central_America,Honduras,0
+Mexico,MEX,MEX,North_America,Mexico,0
+Nicaragua,NIC,CCA,Caribbean_Central_America,Nicaragua,0
+Panama,PAN,CCA,Caribbean_Central_America,Panama,0
+Argentina,ARG,SAM,South_America,Argentina,0
+Bolivia,BOL,SAM,South_America,Bolivia,0
+Brazil,BRA,SAM,South_America,Brazil,0
+Chile,CHL,SAM,South_America,Chile,0
+Colombia,COL,SAM,South_America,Colombia,0
+Ecuador,ECU,SAM,South_America,Ecuador,0
+Falkland Islands (Malvinas),FLK,SAM,South_America,Falkland_Islands_(Malvinas),0
+French Guiana,GUF,SAM,South_America,French_Guiana,0
+Guyana,GUY,SAM,South_America,Guyana,0
+Paraguay,PRY,SAM,South_America,Paraguay,0
+Peru,PER,SAM,South_America,Peru,0
+Suriname,SUR,SAM,South_America,Suriname,0
+Uruguay,URY,SAM,South_America,Uruguay,0
+Venezuela,VEN,SAM,South_America,Venezuela,0
+Bermuda,BMU,,,Bermuda,3
+Canada,CAN,CAN,North_America,Canada,0
+Greenland,GRL,GLD,Europe,Greenland,0
+Saint Pierre and Miquelon,SPM,,Europe,Saint_Pierre_and_Miquelon,1
+United States,USA,"USA
+CA: CCF
+AK: ALS
+HI: HAW",North_America,United_States,4
+Kazakhstan,KAZ,CEA,Central_Asia,Kazakhstan,0
+Kyrgyzstan,KGZ,CEA,Central_Asia,Kyrgyzstan,0
+Tajikistan,TJK,CEA,Central_Asia,Tajikistan,0
+Turkmenistan,TKM,CEA,Central_Asia,Turkmenistan,0
+Uzbekistan,UZB,CEA,Central_Asia,Uzbekistan,0
+China,CHN,CHN,East_Asia,China,0
+Hong Kong,HKG,CHN,East_Asia,Hong_Kong,0
+Macao,MAC,CHN,East_Asia,Macao,0
+North Korea,PRK,KOR,East_Asia,North_Korea,0
+Japan,JPN,JPN,East_Asia,Japan,0
+Mongolia,MNG,NEA,North_Asia,Mongolia,0
+South Korea,KOR,KOR,East_Asia,South_Korea,0
+Taiwan,TWN,TEM,East_Asia,Taiwan,0
+Brunei,BRN,SEA,Southeast_Asia,Brunei,0
+Cambodia,KHM,SEA,Southeast_Asia,Cambodia,0
+Indonesia,IDN,IDN,Southeast_Asia,Indonesia,0
+Laos,LAO,SEA,Southeast_Asia,Laos,0
+Malaysia,MYS,SEA,Southeast_Asia,Malaysia,0
+Myanmar,MMR,SEA,Southeast_Asia,Myanmar,0
+Philippines,PHL,PHL,Southeast_Asia,Philippines,0
+Singapore,SGP,SEA,Southeast_Asia,Singapore,0
+Thailand,THA,SEA,Southeast_Asia,Thailand,0
+Timor-Leste,TLS,SEA,Southeast_Asia,Timor-Leste,0
+Vietnam,VNM,SEA,Southeast_Asia,Vietnam,0
+Afghanistan,AFG,MIE,Middle_East,Afghanistan,0
+Bangladesh,BGD,IND,South_Asia,Bangladesh,0
+Bhutan,BTN,IND,South_Asia,Bhutan,0
+India,IND,IND,South_Asia,India,0
+Iran,IRN,MIE,Middle_East,Iran,0
+Maldives,MDV,IND,South_Asia,Maldives,0
+Nepal,NPL,IND,South_Asia,Nepal,0
+Pakistan,PAK,MIE,Middle_East,Pakistan,0
+Sri Lanka,LKA,IND,South_Asia,Sri_Lanka,0
+Akrotiri and Dhekelia,,,,Akrotiri_and_Dhekelia,3
+Armenia,ARM,MIE,Middle_East,Armenia,0
+Azerbaijan,AZE,MIE,Middle_East,Azerbaijan,0
+Bahrain,BHR,,Middle_East,Bahrain,1
+Cyprus,CYP,MIE,Europe,Cyprus,0
+Georgia,GEO,MIE,Middle_East,Georgia,0
+Iraq,IRQ,MIE,Middle_East,Iraq,0
+Israel,ISR,MIE,Middle_East,Israel,0
+Jordan,JOR,MIE,Middle_East,Jordan,0
+Kuwait,KWT,,Middle_East,Kuwait,1
+Lebanon,LBN,MIE,Middle_East,Lebanon,0
+Oman,OMN,ARB,Middle_East,Oman,0
+Qatar,QAT,ARB,Middle_East,Qatar,0
+Saudi Arabia,SAU,ARB,Middle_East,Saudi_Arabia,0
+Palestine,PSE,MIE,Middle_East,Palestine,0
+Syria,SYR,MIE,Middle_East,Syria,0
+Turkey-EUR,TUR,EUR,Europe,Turkey,0
+Turkey,TUR,"MIE
+EUR",Europe,Turkey,4
+United Arab Emirates,ARE,"ARB
+MIE",Middle_East,United_Arab_Emirates,4
+Yemen,YEM,ARB,Middle_East,Yemen,0
+Belarus,BLR,EUR,Europe,Belarus,0
+Bulgaria,BGR,EUR,Europe,Bulgaria,0
+Czechia,CZE,EUR,Europe,Czechia,0
+Hungary,HUN,EUR,Europe,Hungary,0
+Poland,POL,EUR,Europe,Poland,0
+Moldova,MDA,EUR,Europe,Moldova,0
+Romania,ROU,EUR,Europe,Romania,0
+Russia,RUS,"NEA
++
+NWA",North_Asia,Russia,4
+Slovakia,SVK,EUR,Europe,Slovakia,0
+Ukraine,UKR,EUR,Europe,Ukraine,0
+Denmark,DNK,EUR,Europe,Denmark,0
+Estonia,EST,EUR,Europe,Estonia,0
+Faroe Islands,FRO,EUR,Europe,Faroe_Islands,0
+Finland,FIN,EUR,Europe,Finland,0
+Guernsey,GGY,EUR,Europe,Guernsey,0
+Iceland,ISL,EUR,Europe,Iceland,0
+Ireland,IRL,EUR,Europe,Ireland,0
+Isle of Man,IMN,EUR,Europe,Isle_of_Man,0
+Jersey,JEY,EUR,Europe,Jersey,0
+Latvia,LVA,EUR,Europe,Latvia,0
+Lithuania,LTU,EUR,Europe,Lithuania,0
+Norway,NOR,EUR,Europe,Norway,0
+Sweden,SWE,EUR,Europe,Sweden,0
+United Kingdom,GBR,EUR,Europe,United_Kingdom,0
+Albania,ALB,EUR,Europe,Albania,0
+Andorra,AND,EUR,Europe,Andorra,0
+Bosnia and Herzegovina,BIH,EUR,Europe,Bosnia_and_Herzegovina,0
+Croatia,HRV,EUR,Europe,Croatia,0
+Gibraltar,GIB,EUR,Europe,Gibraltar,0
+Greece,GRC,EUR,Europe,Greece,0
+Vatican City,VAT,EUR,Europe,Vatican_City,0
+Italy,ITA,EUR,Europe,Italy,0
+Kosovo,KOS,EUR,Europe,Kosovo,0
+Malta,MLT,EUR,Europe,Malta,0
+Montenegro,MNE,EUR,Europe,Montenegro,0
+Portugal,PRT,EUR,Europe,Portugal,0
+San Marino,SMR,EUR,Europe,San_Marino,0
+Serbia,SRB,EUR,Europe,Serbia,0
+Slovenia,SVN,EUR,Europe,Slovenia,0
+Spain,ESP,EUR,Europe,Spain,0
+North Macedonia,MKD,EUR,Europe,North_Macedonia,0
+Austria,AUT,EUR,Europe,Austria,0
+Belgium,BEL,EUR,Europe,Belgium,0
+France,FRA,EUR,Europe,France,0
+Germany,DEU,EUR,Europe,Germany,0
+Liechtenstein,LIE,EUR,Europe,Liechtenstein,0
+Luxembourg,LUX,EUR,Europe,Luxembourg,0
+Monaco,MCO,EUR,Europe,Monaco,0
+Netherlands,NLD,EUR,Europe,Netherlands,0
+Switzerland,CHE,EUR,Europe,Switzerland,0
+Australia,AUS,AUS,Australia,Australia,0
+New Zealand,NZL,NZL,Pacific_Islands,New_Zealand,0
+Fiji,FJI,,Pacific_Islands,Fiji,1
+New Caledonia,NCL,PAC,Pacific_Islands,New_Caledonia,0
+Papua New Guinea,PNG,PNG,Pacific_Islands,Papua_New_Guinea,0
+Solomon Islands,SLB,PAC,Pacific_Islands,Solomon_Islands,0
+Vanuatu,VUT,PAC,Pacific_Islands,Vanuatu,0
+Guam,GUM,,Pacific_Islands,Guam,1
+Kiribati,KIR,,Pacific_Islands,Kiribati,1
+Marshall Islands,MHL,,Pacific_Islands,Marshall_Islands,1
+Micronesia,FSM,,Pacific_Islands,Micronesia,1
+Nauru,NRU,,Pacific_Islands,Nauru,1
+Northern Mariana Islands,MNP,,Pacific_Islands,Northern_Mariana_Islands,1
+Palau,PLW,,Pacific_Islands,Palau,1
+American Samoa,ASM,PAC,Pacific_Islands,American_Samoa,0
+Cook Islands,COK,,Pacific_Islands,Cook_Islands,1
+French Polynesia,PYF,,,French_Polynesia,3
+Niue,NIU,,Pacific_Islands,Niue,1
+Tokelau,TKL,,,Tokelau,3
+Tonga,TON,PAC,Pacific_Islands,Tonga,0
+Tuvalu,TUV,,Pacific_Islands,Tuvalu,1
+Wallis and Futuna,WLF,,Pacific_Islands,Wallis_and_Futuna,1
+Samoa,WSM,PAC,Pacific_Islands,Samoa,0
+Pitcairn Islands,PCN,,,Pitcairn_Islands,3
