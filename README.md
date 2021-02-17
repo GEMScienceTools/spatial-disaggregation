@@ -22,7 +22,19 @@ At the moment, the code is heavy on external dependencies. These can potentially
 
 First, ensure you are in the appropriate working directory (i.e. the main directory)
 
-Once in the appropriate working directory, you should be able to run the code by typing:
+We will need raster data from WorldPop to successfully execute the demo. This file was not included with the repository due to the large file size.
+
+WorldPop data can be downloaded using the function **download_worldpop.py**.. This downloads the dataset to the expected location by **main_script.py**. You can call it as follows:
+
+    python download_worldpop.py <country>
+
+For example, to download the WorldPop data for Austria, you can call:
+
+    python download_worldpop.py AUT
+
+In this case, the ISO 3166-1 alpha-3 must be provided for the ``<country>``.
+
+With WorldPop data downloaded, you can execute the core script as follows:
 
     python main_script.py <country> <group>
 
@@ -50,16 +62,6 @@ If successful, you should something similar to the following print statements:
     Code took 5.1628 seconds
 
 The computation time is related to the number of administrative boundaries in the input data.
-
-An additional helpful function included is **download_worldpop.py**, which can be used to download WorldPop data for a given country. This downloads the dataset to the expected location by **main_script.py**. You can call it as follows:
-
-    python download_worldpop.py <country>
-
-For example, to download the WorldPop data for Turkey, you can call:
-
-    python download_worldpop.py TUR
-
-In this case, the ISO 3166-1 alpha-3 must be provided for the ``<country>``.
 
 If the entire **spatial-disaggregation** repository was cloned, then the code should execute successfully provided the listed dependencies are installed.
 
