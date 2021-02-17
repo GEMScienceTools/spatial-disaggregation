@@ -92,7 +92,7 @@ mosaic_mapping = os.path.join("data", "input_mosaic_mapping_scheme.csv")
 worldpop_year = 2020
 
 # Directory locations - inputs
-shp_directory = os.path.join("data", "shapefile_sera")
+shp_directory = os.path.join("data", "shapefile_in")
 wp_directory = os.path.join("data", "worldpop")
 
 # File locations - inputs
