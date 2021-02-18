@@ -3,5 +3,5 @@ pandas
 geopandas
 rasterio
 osgeo
-shapely
+shapely --no-binary=shapely
 scipy
