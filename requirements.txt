@@ -1,8 +1,8 @@
 numpy
 pandas
 geopandas
+shapely --no-binary=shapely
 rasterio
 osgeo
-shapely --no-binary=shapely
 scipy
 gdal
