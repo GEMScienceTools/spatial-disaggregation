@@ -1,0 +1,8 @@
+numpy
+pandas
+geopandas
+shapely --no-binary=shapely
+rasterio
+osgeo
+scipy
+gdal

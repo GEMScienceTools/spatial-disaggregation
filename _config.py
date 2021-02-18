@@ -73,6 +73,7 @@ thresh = 0.001
 # buildings would be to sample buildings proportional to the square root of
 # the estimated population (which would yield more spread)
 pop_thresh = 0.35
+# NOTE: The pop input will be a df column of the population estimates
 population_to_buildings = lambda pop : [x if x > pop_thresh else 0 for x in pop]
 
 
