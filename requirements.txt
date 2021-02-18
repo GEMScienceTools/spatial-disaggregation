@@ -5,3 +5,4 @@ rasterio
 osgeo
 shapely --no-binary=shapely
 scipy
+gdal
