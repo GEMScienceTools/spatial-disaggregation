@@ -8,7 +8,11 @@ The purpose of this code is to distribute a coarse exposure model to a finer res
 
 ## Dependencies
 
-At the moment, the code is heavy on external dependencies. These can potentially be reduced at a later stage. These external dependencies include:
+To install all dependencies using ``pip``, run the following command:
+
+    pip install -r requirements.txt
+
+The dependencies are as follows:
 
 * numpy
 * pandas
@@ -16,9 +20,12 @@ At the moment, the code is heavy on external dependencies. These can potentially
 * rasterio
 * shapely^
 * osgeo
-* GDAL (Note: must be installed with brew before pip)
+* GDAL^^ (Note: must be installed with ``brew`` before ``pip``)
 
 *^There is currently a known issue where importing from shapely returned an AssertionError when loading the GEOS library. This can be resolved by installing shapely before fiona, rasterio, and GDAL. See [this link](https://sgillies.net/2019/06/23/fix-for-geos-dll-bug-shapely-1-7a2.html) for more details. If that doesn't work, try using the command ``pip install shapely --no-binary shapely``*
+
+
+*^^GDAL requires installation prior to ``pip`` installation. This can be done using ``brew``. Windows users might consider installing GDAL using [OSGeo4W](https://trac.osgeo.org/osgeo4w/). macOS users might consider using the [KyngChaos installer](https://www.kyngchaos.com/software/frameworks/)*
 
 ## Getting started
 
