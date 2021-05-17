@@ -45,7 +45,7 @@ def main(mapped_field, desired_level, country_name, country_iso, group):
     print(f"- Original exposure: {exp_path}")
     print(f"- Corresponding admin divisions: {shp_path}")
     print(f"- WorldPop data: {wp_path}")
-    print(f"Both exposure and admin division files expected to have field {mapped_field}\n")
+    print(f"Both exposure and admin division files expected to have field {mapped_field}. Target resolution is {res}.\n")
     print("If any of this information seems incorrect, please check input parameters within _config.py\n")
 
     # --------------------------------------------------------------------------
@@ -106,7 +106,7 @@ def main(mapped_field, desired_level, country_name, country_iso, group):
     if important_exceptions:
         print_red(f"IMPORTANT WARNING: Will not be able to properly distribute {important_exceptions}; using nearest raster values instead")
         # Add important exceptions to df and raster values from nearest point
-        df = add_excepted_bounds(df, adm[desired_level], important_exceptions,
+        df = add_excepted_bounds(df, adm, important_exceptions,
                                  mapped_field)
         # Update bound_names accordingly
         bound_names = df[mapped_field].unique()

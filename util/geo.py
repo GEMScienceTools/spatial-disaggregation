@@ -52,15 +52,10 @@ def associate_grid_to_bounds(raster, adm_level, mapped_field,
         if type(geom) == shapely.geometry.polygon.Polygon:
             geom = [geom]
         # Perform mask on raster data
-        mask_error = False
         with rasterio.open(raster) as src:
             # Mask to boundary
-            try:
-                out_image, out_transform = rasterio.mask.mask(src, geom, crop=True)
-                no_data = src.nodata
-            except ValueError:
-                mask_error = True
-                print_yellow(f"Could not find raster data for {adm[mapped_field]}, will skip spatial disaggregation for that boundary")
+            out_image, out_transform = rasterio.mask.mask(src, geom, crop=True)
+            no_data = src.nodata
         # Extract data from masked image
         data = out_image[0]  # get first (only) band
         # Remove nodata values
@@ -76,7 +71,7 @@ def associate_grid_to_bounds(raster, adm_level, mapped_field,
         # Construct dataframe from raster data
         dfs[i] = gpd.GeoDataFrame({'col':c,'row':r, value_name:values})
         # Implement try-except for cases where mask produces no pixels
-        try:
+        if dfs[i].shape[0] > 0:
             dfs[i]['x'] = dfs[i].apply(
                 lambda row: rc2xy(row.row, row.col)[0], axis=1
                 )
@@ -93,7 +88,7 @@ def associate_grid_to_bounds(raster, adm_level, mapped_field,
                 else:
                     dfs[i][col] = val
         # Warn user if mask produced no pixels
-        except Exception:
+        else:
             # TODO: Figure out an approach to handle these exceptions
             exceptions.append(adm[mapped_field])
 
@@ -130,7 +125,7 @@ def add_excepted_bounds(df, adm, important_exceptions, mapped_field):
         # Get repr. point from matching mapped_field (dissolve in case of dup)
         idx = (adm[mapped_field] == exception)
         area = adm[idx].to_crs(desired_crs).geometry.area
-        point = adm[idx].to_crs(desired_crs).geometry.representative_point
+        point = adm[idx].to_crs(desired_crs).geometry.representative_point()
         x, y = point.x, point.y
         # Check if more than one entity retrieved, and take larger if so
         if point.shape[0] > 1:
