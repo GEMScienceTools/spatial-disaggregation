@@ -31,6 +31,8 @@ The dependencies are as follows:
 
 First, ensure you are in the appropriate working directory (i.e. the main directory)
 
+### Downloading WorldPop data
+
 We will need raster data from WorldPop to successfully execute the demo. This file was not included with the repository due to the large file size.
 
 WorldPop data can be downloaded using the function **download_worldpop.py**.. This downloads the dataset to the expected location by **main_script.py**. You can call it as follows:
@@ -42,6 +44,12 @@ For example, to download the WorldPop data for Austria, you can call:
     python download_worldpop.py AUT
 
 In this case, the ISO 3166-1 alpha-3 must be provided for the ``<country>``.
+
+By default, the UN-adjusted 1km population dataset is used. However, you can also download the higher resolution UN-adjusted 100m population dataset as follows:
+
+    python download_worldpop.py AUT 100m
+
+### Disaggregating exposure data
 
 With WorldPop data downloaded, you can execute the core script as follows:
 
