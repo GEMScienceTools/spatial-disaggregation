@@ -52,9 +52,15 @@ def associate_grid_to_bounds(raster, adm_level, mapped_field,
         if type(geom) == shapely.geometry.polygon.Polygon:
             geom = [geom]
         # Perform mask on raster data
+        mask_error = False
         with rasterio.open(raster) as src:
-            out_image, out_transform = rasterio.mask.mask(src, geom, crop=True)
-            no_data = src.nodata
+            # Mask to boundary
+            try:
+                out_image, out_transform = rasterio.mask.mask(src, geom, crop=True)
+                no_data = src.nodata
+            except ValueError:
+                mask_error = True
+                print_yellow(f"Could not find raster data for {adm[mapped_field]}, will skip spatial disaggregation for that boundary")
         # Extract data from masked image
         data = out_image[0]  # get first (only) band
         # Remove nodata values

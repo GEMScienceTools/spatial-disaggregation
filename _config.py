@@ -51,7 +51,7 @@ from util.util import *
 # In the same units as the desired_crs (e.g. degrees for EPSG:4326)
 # Cannot be equal to or less than the original resolution of the downloaded
 # data
-res = 0.05
+res = 0.01
 
 # Desired coordinate reference system
 desired_crs = "EPSG:4326"
@@ -59,7 +59,7 @@ desired_crs = "EPSG:4326"
 # Input shapefile parameters - field_name needs to exist in both the input
 # shapefile and the input exposure CSV file. Directly replace field_name
 # with the field of interest
-adm_level = 1
+adm_level = 3
 field_name = f"ID_{adm_level}"
 
 # Threshold for checking that sampled asset counts match original input
@@ -97,7 +97,7 @@ shp_directory = os.path.join("data", "shapefile_in")
 wp_directory = os.path.join("data", "worldpop")
 
 # File locations - inputs
-name = "Austria"
+name = "Portugal"
 shp_file = f"Adm{adm_level}_{name}.shp"
 
 # Directory locations - outputs
