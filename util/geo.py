@@ -10,6 +10,10 @@ def resample_raster_to_resolution(original_raster, file_name, res,
     sample_agg. At the time of creation, there was no SUM option and so
     the AVERAGE option was used'''
 
+    # Confirm raster file exists
+    if not os.path.exists(original_raster):
+        print_red(f"ERROR: You need to download raster data first, could not find {original_raster}.")
+
     # Arrange new file name
     new_raster = original_raster.replace(file_name, "resampled_" + file_name)
 
