@@ -65,7 +65,7 @@ def resample_assets(df, assets, bound_names, mapped_field):
                 sampled_jdx = random.choices(i_jdx, weights=p_jdx, k=n_samples)
 
                 # Arrange into dataframe format
-                new_samples = df_jdx.iloc[sampled_jdx].copy()
+                new_samples = df_jdx.loc[sampled_jdx].copy()
                 new_samples["weights"] = w_samples
                 new_samples["taxonomy"] = i  # FIXME: should be automatic from retain_tags
 
