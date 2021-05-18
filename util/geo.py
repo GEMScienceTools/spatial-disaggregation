@@ -25,6 +25,34 @@ def resample_raster_to_resolution(original_raster, file_name, res,
     # Return new path
     return new_raster
 
+# Find nearest points between two dataframes and return associated columns
+def ckdnearest(gdfA, gdfB, gdfB_cols=['count']):
+    # Drop columns if they exist
+    if 'dist' in gdfA.columns.to_list():
+        gdfA.drop(columns=gdfB_cols+['dist'], inplace=True)
+    else:
+        gdfA.drop(columns=gdfB_cols, inplace=True)
+    # resetting the index of gdfA and gdfB here.
+    gdfA = gdfA.reset_index(drop=True)
+    gdfB = gdfB.reset_index(drop=True)
+    # Arranging locations
+    A = np.concatenate(
+        [np.array(geom.coords) for geom in gdfA.geometry.to_list()])
+    B = [np.array(geom.coords) for geom in gdfB.geometry.to_list()]
+    B_ix = tuple(itertools.chain.from_iterable(
+        [itertools.repeat(i, x) for i, x in enumerate(list(map(len, B)))]))
+    B = np.concatenate(B)
+    # Finding nearest point
+    ckd_tree = cKDTree(B)
+    dist, idx = ckd_tree.query(A, k=1)
+    idx = itemgetter(*idx)(B_ix)
+    # Getting corresponding column values
+    gdf = pd.concat(
+        [gdfA, gdfB.loc[idx, gdfB_cols].reset_index(drop=True),
+         pd.Series(dist, name='dist')], axis=1)
+    # Returning df with new fields
+    return gdf
+
 
 # Get dataframe of grid points from raster and associate with admin bounds
 def associate_grid_to_bounds(raster, adm_level, mapped_field,
@@ -124,7 +152,7 @@ def add_excepted_bounds(df, adm, important_exceptions, mapped_field):
     for exception in important_exceptions:
         # Get repr. point from matching mapped_field (dissolve in case of dup)
         idx = (adm[mapped_field] == exception)
-        area = adm[idx].to_crs(desired_crs).geometry.area
+        area = adm[idx].to_crs(area_crs).geometry.area
         point = adm[idx].to_crs(desired_crs).geometry.representative_point()
         x, y = point.x, point.y
         # Check if more than one entity retrieved, and take larger if so
@@ -142,7 +170,7 @@ def add_excepted_bounds(df, adm, important_exceptions, mapped_field):
         )
 
     # Find nearest smod_string and built_string from raster grid
-    df_new = ckdnearest(df_new, df, gdfB_cols=['smod_string', 'built_string', 'count'])
+    df_new = ckdnearest(df_new, df, gdfB_cols=['count'])
     # Maintain index and replace 0 values with small number
     df_new.index = idx_new
     df_new.loc[df_new['count'] == 0, 'count'] = 0.1

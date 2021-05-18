@@ -1,3 +1,6 @@
+# Avoid large files
+data/worldpop/*.tif
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

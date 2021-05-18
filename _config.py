@@ -24,12 +24,14 @@ from rasterio.warp import calculate_default_transform, reproject, Resampling
 import rasterio.transform
 import rasterio.mask
 from rasterio import Affine
-from osgeo import gdal, gdalconst
 
 # Shapefiles - working with vector data
 import shapely.geometry
 from shapely.ops import cascaded_union
 import geopandas as gpd
+
+# GDAL
+from osgeo import gdal, gdalconst
 
 # Numeric
 import pandas as pd
@@ -53,13 +55,19 @@ from util.util import *
 # data
 res = 0.01
 
-# Desired coordinate reference system
+# Desired coordinate reference system corresponding to input files
 desired_crs = "EPSG:4326"
+# Desired coordinate reference system for calculating areas (you may need to
+# look up which flat projection would work well for your region); however it's
+# not particularly important to the calculation and therefore OK to be a bit
+# inaccurate
+area_crs = "EPSG:3035" # Suitable for EU
 
 # Input shapefile parameters - field_name needs to exist in both the input
 # shapefile and the input exposure CSV file. Directly replace field_name
 # with the field of interest
 adm_level = 3
+# adm_level = 1
 field_name = f"ID_{adm_level}"
 
 # Threshold for checking that sampled asset counts match original input
@@ -98,6 +106,7 @@ wp_directory = os.path.join("data", "worldpop")
 
 # File locations - inputs
 name = "Portugal"
+# name = "Austria"
 shp_file = f"Adm{adm_level}_{name}.shp"
 
 # Directory locations - outputs
