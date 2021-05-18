@@ -23,7 +23,7 @@ The dependencies are as follows:
 * osgeo
 * GDAL^^
 
-*^There is currently a known issue where importing from shapely returned an AssertionError when loading the GEOS library. This can be resolved by installing shapely before fiona, rasterio, and GDAL. See [this link](https://sgillies.net/2019/06/23/fix-for-geos-dll-bug-shapely-1-7a2.html) for more details. If that doesn't work, try using the command ``pip install shapely --no-binary shapely``*
+*^There is currently a known issue where importing from shapely returned an AssertionError when loading the GEOS library. This can be resolved by installing shapely before fiona, rasterio, and GDAL. See [this link](https://sgillies.net/2019/06/23/fix-for-geos-dll-bug-shapely-1-7a2.html) or [this link](https://github.com/Toblerity/Shapely/issues/553) for more details. If that doesn't work, try using the command ``pip install shapely --no-binary shapely``*
 
 
 *^^GDAL requires installation prior to ``pip`` installation. This can be done using ``brew``. Windows users might consider installing GDAL using [OSGeo4W](https://trac.osgeo.org/osgeo4w/). macOS users might consider using the [KyngChaos installer](https://www.kyngchaos.com/software/frameworks/). Additionally, if the ``pip`` installation fails, be sure to check that the versions between ``brew`` and ``pip`` correspond to one another.*

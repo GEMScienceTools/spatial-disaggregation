@@ -53,7 +53,7 @@ from util.util import *
 # In the same units as the desired_crs (e.g. degrees for EPSG:4326)
 # Cannot be equal to or less than the original resolution of the downloaded
 # data
-res = 0.01
+res = 0.00833
 
 # Desired coordinate reference system corresponding to input files
 desired_crs = "EPSG:4326"
