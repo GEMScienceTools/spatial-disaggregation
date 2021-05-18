@@ -26,20 +26,39 @@ def main(mapped_field, desired_level, country_name, country_iso, group):
     desired coordinate reference system.'''
 
     # --------------------------------------------------------------------------
+    #   PRINT INFO FOR USER
+    # --------------------------------------------------------------------------
+
+    # Arrange full WP path
+    wp_name = f"{country_iso.lower()}_ppp_{worldpop_year}.tif"
+    wp_path = os.path.join(wp_directory, wp_name)
+
+    # Arrange full shapefile path
+    shp_path = os.path.join(shp_directory, shp_file)
+
+    # Arrange full exposure
+    exp_name = f"Exposure_{group}_{country}.csv"
+    exp_path = os.path.join(exp_directory, exp_name)
+
+    # Print information
+    print(f"\nThis code is using the following files:")
+    print(f"- Original exposure: {exp_path}")
+    print(f"- Corresponding admin divisions: {shp_path}")
+    print(f"- WorldPop data: {wp_path}")
+    print(f"Both exposure and admin division files expected to have field {mapped_field}. Target resolution is {res}.\n")
+    print("If any of this information seems incorrect, please check input parameters within _config.py\n")
+
+    # --------------------------------------------------------------------------
     #   PARSE ADMIN BOUNDS & CITIES
     # --------------------------------------------------------------------------
 
     # Read admin bounds, which must exist locally
     # This will also associate desired admin shp and associated field
-    adm = parse_adm()
+    adm = parse_adm(shp_path)
 
     # --------------------------------------------------------------------------
     #   MERGE RASTERS AND ASSOCIATE POINTS TO ADMIN BOUNDS
     # --------------------------------------------------------------------------
-
-    # Arrange full path
-    wp_name = f"{country_iso.lower()}_ppp_{worldpop_year}.tif"
-    wp_path = os.path.join(wp_directory, wp_name)
 
     # Resample (aggregate) WorldPop grid to specified coarser resolution
     wp_path = resample_raster_to_resolution(
@@ -87,7 +106,7 @@ def main(mapped_field, desired_level, country_name, country_iso, group):
     if important_exceptions:
         print_red(f"IMPORTANT WARNING: Will not be able to properly distribute {important_exceptions}; using nearest raster values instead")
         # Add important exceptions to df and raster values from nearest point
-        df = add_excepted_bounds(df, adm[desired_level], important_exceptions,
+        df = add_excepted_bounds(df, adm, important_exceptions,
                                  mapped_field)
         # Update bound_names accordingly
         bound_names = df[mapped_field].unique()

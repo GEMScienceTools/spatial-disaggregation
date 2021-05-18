@@ -3,15 +3,12 @@ from _config import *
 
 
 # Define function to parse admin bounds shapefile
-def parse_adm():
+def parse_adm(shp_path):
     ''' This function reads in a local shapefile of administrative boundaries,
      of which the input exposure CSV is based upon.'''
 
-    # Determine desired number of adm levels
-    file_path = os.path.join(shp_directory, shp_file)
-
     # Initialize geodataframes and read files
-    adm = gpd.read_file(file_path, encoding='utf-8').to_crs(desired_crs)
+    adm = gpd.read_file(shp_path, encoding='utf-8').to_crs(desired_crs)
 
     # Return result
     return adm
